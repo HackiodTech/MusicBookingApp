@@ -25,8 +25,8 @@ Follow these steps to set up and run the project locally:
 
 ```bash
 # Clone the repository
-git clone <repo-url>
-cd <project-directory>
+git clone https://github.com/HackiodTech/MusicBookingApp.git
+cd music-booking-app
 
 # Create a virtual environment (recommended)
 python -m venv venv
@@ -46,18 +46,19 @@ The API will now be accessible at `http://127.0.0.1:5000/`
 
 ---
 ## API Endpoints
+https://galactic-space-872907.postman.co/workspace/music-app~153392f7-c8fc-4236-8b46-d96ab7c7d289/collection/32061404-613594af-583a-4560-8010-2ba09da09948?action=share&creator=32061404
 
 ### Authentication
 - `POST /api/auth/register` - Register a new user or artist
 - `POST /api/auth/login` - Authenticate a user and return JWT
 
 ### User Profile
-- `GET /api/profile` - View user profile
-- `PUT /api/profile` - Edit user profile
+- `GET /api/profile/profile` - View user profile
+- `PUT /api/profile/profile` - Edit user profile
 
 ### Events
 - `POST /api/events/create` - Create a new event (users & artists can create)
-- `GET /api/events` - View all available events
+- `GET /api/events/events` - View all available events
 - `GET /api/events/<event_id>` - View a specific event
 
 ### Booking
